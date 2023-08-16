@@ -9,7 +9,8 @@ fun main(args: Array<String>) {
         if (ch == str[i]) {
             ++frequency
         }
-    }
+        }
+
 
     println("Frequency of $ch = $frequency")
 }

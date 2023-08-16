@@ -2,11 +2,13 @@ package KotlinChallenge
 
 fun main(args: Array<String>) {
 
- println("Enter any number")
- var num: Int = readLine()!!.toInt()
- var a = 2
- if (num % a == 0) {
-  println("Its an Even number")
- } else
-  println("Its an Odd number")
+
+
+ print("Enter a number: ")
+ val num = readLine()!!.toInt()
+
+ if (num % 2 == 0)
+  println("$num is even")
+ else
+  println("$num is odd")
 }

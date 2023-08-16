@@ -3,8 +3,12 @@ package KotlinChallenge
 fun main(args: Array<String>) {
 
     println("Enter an Alphabet:")
-    val letter = readLine()
-
+    val letter = readLine()!!.toString().trim()
+if (letter.isBlank()) {
+    println("Empty submission try again")
+}else{
+    var chara =letter[0]
+}
 
     val charToCheck = letter!!.toCharArray()[0]
 
@@ -25,8 +29,6 @@ fun main(args: Array<String>) {
         "Consonant"
 
     println("Character ($charToCheck) is $result")
-
-
 
 
 }
